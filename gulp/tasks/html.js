@@ -15,7 +15,7 @@ export function html(done) {
             )
         )
         .pipe(fileinclude())
-        .pipe(app.plugins.replace(/@img\//g, "img/"))
+        .pipe(app.plugins.replace("../../img/", "./img/"))
         .pipe(webphtml())
         .pipe(
             versionNumber({

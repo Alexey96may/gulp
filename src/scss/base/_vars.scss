@@ -1,35 +1,56 @@
-// Colors
+// Text Colors
 $lightTextColor: #ffecc2;
 $darkTextColor: #264236;
-$paleTextColor: #848d74;
+$paleTextColor: #666d5a; //#848d74;
+$mediumTextColor: #4a522b; //#96a757;
 
+//  Background Colors
 $lightBgColor: #ffecc2;
-$mediumBgColor: #96a757;
+$mediumBgColor: #7d8b49; //#96a757;
+$mediumBgColorOp: rgba(125, 139, 73, 0.92);
 $darkBgColor: #264236;
 $pickedBgColor: #e8c01b;
 
+//  Border Colors
 $lightBorderColor: #ffecc2;
-$darkBorderColor: #96a757;
+$darkestBorderColor: #264236;
+$darkBorderColor: #4a522b; // #96a757;
+
+// Gradient
+$maskGrad: linear-gradient(
+    270deg,
+    rgba(125, 139, 73, 0.3) 0%,
+    rgba(125, 139, 73, 0.4) 50%,
+    rgba(125, 139, 73, 0.6) 100%
+);
 
 // Fonts
 $mainFontFamily: "Poppins", "Open Sans", sans-serif;
 $titleFontFamily: "Skincake", "Pacifico", sans-serif;
 
-$pMiniFontSize: 8px;
-$pFontSize: 16px;
-$subtFontSize: 24px;
-$tFontSize: 48px;
+$basicFontSize: 16px;
+
+$pMiniFontSize: 0.5rem;
+$pFontSize: 1rem;
+$subtFontSize: 1.5rem;
+$tFontSize: 3rem;
 
 //  Borders
-$smallBorderRadius: 30%;
-$bigBorderRadius: 60%;
+$smallBorderRadius: 1.875em;
+$bigBorderRadius: 3.75em;
 
 //  Container
-$containerWidth: 1440px;
 $containerPadding: 20px;
+$containerWidth: 1184px + ($containerPadding * 2);
 
 //  Transitions
-$basicTrans: all 0.2s;
+$basicTrans: all 0.3s;
+
+//  Scale
+$basicScale: scale(1.3);
+
+//  Opacity
+$basicOpacity: 0.6;
 
 // Paddings & Margins
 $mainPadding: 20px;
@@ -39,4 +60,4 @@ $mainMargin: 20px;
 $mediaTablet: 992px;
 $mediaSmallTablet: 767px;
 $mediaMobile: 575px;
-$mediaSmallMobile: 320px;
+$mediaSmallMobile: 370px;
